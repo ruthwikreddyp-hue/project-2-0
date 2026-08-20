@@ -1,3 +1,10 @@
-# Project 2.0 V21
+# Project 2.0 V22
 
-Nutrition is tracked meal-wise using the supplied food database and serving sizes. Food entries can be removed after logging, each meal displays calories and individual macros, and Home, Workout, and Nutrition tabs share a selectable log date so you can view data for a specific day. Weight, water, measurements, meals, and workout sessions use the selected date.
+UI and tracking improvements:
+- Meal cards with borders and per-meal calories, protein, carbs, and fat.
+- Nutrition header shows calories, protein, carbs, and fat.
+- Measurement history opens a progress graph when a measurement is tapped.
+- Strength history is tappable and opens an estimated 1RM graph.
+- Weight progress remains visible in the Progress tab.
+- Food and measurement unit inputs use dropdowns.
+- Pinch-to-zoom disabled for app-like mobile behavior.
