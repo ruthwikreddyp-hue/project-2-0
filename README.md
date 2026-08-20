@@ -1,13 +1,3 @@
-# Project 2.0 V11
+# Project 2.0 V20
 
-Personal fitness tracker PWA.
-
-## V11
-- Daily water tracker on Home with quick +250 ml / +500 ml buttons and custom entry.
-- Editable daily water goal.
-- Water data is stored locally by date.
-- Steps card now explains automatic Health tracking limitation of the current PWA. Automatic Apple Health / Health Connect sync requires the native mobile app.
-- Existing workout, weight, nutrition, and custom measurement features preserved.
-
-## Deploy
-Upload the contents of this folder to your GitHub Pages repository.
+Nutrition database updated with the user's supplied food list and serving sizes. Food entries store a base serving amount (e.g. 100 g, 1 pc, 1 scoop) and nutrition values for that serving. Custom foods use the same serving-based model.
