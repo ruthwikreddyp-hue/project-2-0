@@ -1,14 +1,7 @@
-# Project 2.0 V32
+# Project 2.0 V33
 
-Major progress/analytics upgrade on top of V31.
-
-- Workout progression suggestions and PRs
-- Workout scheduling
-- Weight 7/14/30 day trend averages
-- Nutrition 7-day averages
-- Saved meals
-- Recipe builder
-- Measurement history graphs (existing)
-- Progress photo gallery with date/pose and delete/view
-
-Supabase authentication and the existing `user_data` JSON cloud-sync model are preserved. Keep your existing `config.js` with your Supabase URL and anon/public key when deploying.
+Welcome/onboarding screen added:
+- First-time users can create an account, sign in, or skip.
+- Returning signed-in users see a Welcome back screen.
+- Returning users who previously created an account are prompted to sign in or continue without signing in.
+- Existing account/cloud sync flow is preserved.
