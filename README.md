@@ -1,3 +1,5 @@
-# Project 2.0 V43
+# Project 2.0 V63
 
-Fixes workout editor/log save navigation by force-closing the modal, clearing its DOM, and navigating to the Workout screen on the next animation frame. Save buttons now give explicit confirmation to the user.
+V63 fixes local startup when `config.js` is not present by making the Supabase configuration optional. The app can now run locally without credentials, while an existing `config.js` is still respected for cloud features.
+
+Keep your existing `config.js` when deploying to GitHub Pages.
