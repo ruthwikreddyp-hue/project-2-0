@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="project-version" content="V51"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="config.js"></script>
+<script src="config.js?v=52-authfix2"></script>
 <meta name="theme-color" content="#0b0b0c"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Project 2.0"><link rel="manifest" href="manifest.json"><title>Project 2.0</title>
 <style>
 :root{--bg:#0b0b0c;--card:#151518;--card2:#1c1c20;--text:#f5f5f5;--muted:#9b9ba3;--line:#2a2a2f;--accent:#fff;--good:#7ee2a8}*{box-sizing:border-box}html{scroll-behavior:auto}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}button,input{font:inherit}button{border:0;color:inherit;background:none;cursor:pointer}.app{max-width:760px;margin:auto;min-height:100vh;padding-bottom:90px}.top{padding:calc(24px + env(safe-area-inset-top)) 20px 8px;display:flex;justify-content:space-between;align-items:flex-start}.brand{font-weight:800;letter-spacing:-.7px;font-size:25px}.tag{color:var(--muted);font-size:12px;margin-top:3px}.date{font-size:12px;color:var(--muted);text-align:right}.account-btn{margin-top:8px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:7px 10px;font-size:11px;color:var(--text);max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.content{padding:12px 20px}.screen{display:none}.screen.active{display:block}.hero{margin:8px 0 18px}.hero h1{font-size:32px;letter-spacing:-1.2px;margin:0 0 5px}.hero p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}.label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.7px}.big{font-size:28px;font-weight:750;margin-top:8px;letter-spacing:-.8px}.sub{font-size:12px;color:var(--muted);margin-top:4px}.section{display:flex;justify-content:space-between;align-items:center;margin:26px 0 10px}.section h2{font-size:16px;margin:0}.link{font-size:12px;color:var(--muted)}.primary{width:100%;background:var(--accent);color:#111;padding:14px;border-radius:13px;font-weight:700;margin-top:12px}.secondary{background:var(--card2);border:1px solid var(--line);padding:11px 14px;border-radius:12px}.row{display:flex;gap:10px;align-items:center}.split{display:flex;justify-content:space-between;align-items:center}.progress{height:7px;background:#29292d;border-radius:20px;overflow:hidden;margin-top:10px}.bar{height:100%;background:#fff;border-radius:20px}.list{display:flex;flex-direction:column;gap:9px}.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px}.muted{color:var(--muted)}.nav{position:fixed;bottom:0;left:0;right:0;background:rgba(11,11,12,.94);backdrop-filter:blur(18px);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:10}.navinner{width:min(760px,100%);display:grid;grid-template-columns:repeat(5,1fr);padding:8px 10px env(safe-area-inset-bottom)}.navinner-four{grid-template-columns:repeat(5,1fr)}.nav button{padding:7px 2px;color:var(--muted);font-size:10px}.nav button.active{color:#fff}.icon{display:block;font-size:20px;margin-bottom:3px}.form{background:var(--card);border:1px solid var(--line);padding:16px;border-radius:16px}.field{margin-bottom:12px}.field label{display:block;color:var(--muted);font-size:12px;margin-bottom:6px}.field input{width:100%;background:#101013;color:#fff;border:1px solid var(--line);padding:12px;border-radius:10px;outline:none}.table{width:100%;border-collapse:collapse;font-size:13px}.table th,.table td{text-align:left;padding:10px 6px;border-bottom:1px solid var(--line)}.table th{color:var(--muted);font-weight:500}.empty{padding:28px 10px;text-align:center;color:var(--muted)}.toast{position:fixed;left:50%;bottom:82px;transform:translateX(-50%) translateY(20px);background:#fff;color:#111;padding:11px 15px;border-radius:12px;font-size:13px;opacity:0;pointer-events:none;transition:.2s;z-index:30}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.success-dialog{position:fixed;inset:0;background:rgba(0,0,0,.58);display:none;align-items:center;justify-content:center;padding:24px;z-index:50}.success-dialog.show{display:flex}.success-card{width:min(360px,100%);background:#17171a;border:1px solid var(--line);border-radius:18px;padding:24px;text-align:center;box-shadow:0 18px 60px rgba(0,0,0,.45)}.success-icon{width:44px;height:44px;border-radius:50%;background:#7ee2a8;color:#0b0b0c;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:800;font-size:22px}.success-card h3{margin:0 0 6px;font-size:20px}.success-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}.success-card button{margin-top:18px;width:100%}.modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:flex-end;z-index:20}.modal.show{display:flex}.sheet{width:min(760px,100%);margin:auto;background:#141416;border:1px solid var(--line);border-radius:22px 22px 0 0;padding:20px;max-height:90vh;overflow:auto}.close{float:right;font-size:22px;color:var(--muted)}.exercise-chip{display:flex;justify-content:space-between;align-items:center;padding:12px;background:#101013;border:1px solid var(--line);border-radius:11px;margin-bottom:8px} .exercise-results{display:flex;flex-direction:column;gap:8px;height:252px;max-height:252px;overflow-y:auto;padding:6px;border:1px solid var(--line);border-radius:12px;background:#0e0e11}.exercise-chip.compact{width:100%;padding:10px 12px;border-radius:9px;margin:0;font-size:16px;min-height:42px;text-align:left}.exercise-chip.compact span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.demo-link{font-size:13px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:#0e0e11;color:var(--text);text-decoration:none}.demo-link:hover{border-color:#555}.demo-preview{width:100%;max-height:320px;object-fit:contain;border-radius:12px;border:1px solid var(--line);background:#0b0b0d}.metric-card-button{text-align:left;width:100%;display:block}.metric-card-button:active{transform:scale(.995)}.exercise-chip.selected{border-color:#fff}.remove{color:#ff8b8b;font-size:12px}.search{width:100%;background:#101013;color:#fff;border:1px solid var(--line);padding:12px;border-radius:10px;outline:none;margin-bottom:10px}.check{color:var(--good)}.metric-label{display:flex;align-items:center;gap:6px}.metric-emoji{font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center}.weight-chart{height:155px;display:flex;align-items:flex-end;gap:6px;padding:18px 4px 8px;border-bottom:1px solid var(--line);overflow:hidden}.weight-bar-wrap{flex:1;min-width:18px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:5px}.weight-value{font-size:10px;color:var(--text);white-space:nowrap}.weight-bar{width:100%;max-width:24px;background:#7ee2a8;border-radius:5px 5px 2px 2px;min-height:4px}.weight-date{font-size:9px;color:var(--muted);white-space:nowrap}.weight-history-list{display:flex;flex-direction:column;gap:8px;padding-top:12px}.weight-history-row{display:flex;justify-content:space-between;align-items:center;background:#101013;border:1px solid var(--line);border-radius:10px;padding:10px 12px}.weight-history-row strong{font-size:14px}.weight-history-row span{font-size:11px;color:var(--muted)}.weight-chart-empty{width:100%;display:flex;align-items:center;justify-content:center;height:100%;font-size:12px;color:var(--muted)}.water-actions{margin-top:10px}.water-btn{flex:1;padding:8px 6px;font-size:11px}.daybar{display:flex;align-items:center;gap:8px;margin:0 0 14px}.daybar button{background:var(--card2);border:1px solid var(--line);padding:9px 11px;border-radius:10px}.daybar input{flex:1;background:var(--card);color:#fff;border:1px solid var(--line);padding:9px 10px;border-radius:10px;text-align:center}.meal-summary{display:flex;gap:10px;flex-wrap:wrap;margin:6px 2px 0}.meal-summary span{font-size:12px;color:var(--muted)} .food-remove{color:#ff8b8b;font-size:16px;padding:2px 6px}.food-select-row{display:flex;align-items:center;gap:10px;width:100%;text-align:left}.food-select-row input[type=checkbox]{width:18px;height:18px;accent-color:#fff;flex:0 0 auto}.food-select-row .food-main{flex:1;min-width:0}.food-select-row .food-meta{font-size:11px;color:var(--muted);margin-top:3px}.food-selected{margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}.food-selected-row{display:flex;align-items:center;gap:8px;background:#101013;border:1px solid var(--line);border-radius:10px;padding:9px 10px}.food-selected-row .food-name{flex:1;min-width:0}.food-selected-row input{width:92px;background:#0b0b0c;color:#fff;border:1px solid var(--line);padding:9px 8px;border-radius:9px}.food-selected-row .food-unit{font-size:11px;color:var(--muted);min-width:48px}.food-amount-inline{width:78px;background:#0b0b0c;color:#fff;border:1px solid var(--line);padding:8px 7px;border-radius:9px;flex:0 0 78px;font-size:14px}.meal-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin:14px 0}.meal-card .meal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.meal-card .meal-items{display:flex;flex-direction:column;gap:8px;margin-top:12px}.meal-card .metric-emoji{font-size:11px}.macro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.macro-box{background:#101013;border:1px solid var(--line);border-radius:11px;padding:10px 8px;text-align:center}.macro-box .macro-value{font-size:17px;font-weight:700}.macro-box .macro-remaining{font-size:11px;color:#8c8c8c;margin-top:2px}.calorie-progress-wrap{margin-top:14px}.calorie-progress-head{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);margin-bottom:7px}.calorie-progress-head strong{color:var(--text);font-size:13px}.calorie-progress{height:10px;background:#29292d;border-radius:20px;overflow:hidden}.calorie-progress .bar{height:100%;background:#fff;border-radius:20px;transition:width .2s}.calorie-status{font-size:12px;color:var(--muted);margin-top:7px}
@@ -59,12 +59,22 @@
 const KEY='project20_data_v2';
 const SUPABASE_URL = String(window.PROJECT20_SUPABASE_URL||'').trim();
 const SUPABASE_ANON_KEY = String(window.PROJECT20_SUPABASE_ANON_KEY||'').trim();
-const hasSupabase = !!(SUPABASE_URL && SUPABASE_ANON_KEY && window.supabase?.createClient);
-let supabaseClient = hasSupabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, storage: window.localStorage, storageKey: 'project20-supabase-auth' } }) : null;
+const AUTH_STORAGE_KEY='project20-supabase-auth';
+// Persist the public client key once a working config has been loaded. This protects against stale config.js caching.
+if(SUPABASE_ANON_KEY && !/^YOUR_/i.test(SUPABASE_ANON_KEY)){ try{ localStorage.setItem('project20-supabase-anon-key',SUPABASE_ANON_KEY); }catch(e){} }
+const EFFECTIVE_ANON_KEY = (SUPABASE_ANON_KEY && !/^YOUR_/i.test(SUPABASE_ANON_KEY)) ? SUPABASE_ANON_KEY : (localStorage.getItem('project20-supabase-anon-key')||'');
+const hasSupabase = !!(SUPABASE_URL && EFFECTIVE_ANON_KEY && window.supabase?.createClient);
+let supabaseClient = hasSupabase ? window.supabase.createClient(SUPABASE_URL, EFFECTIVE_ANON_KEY, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false, storage: window.localStorage, storageKey: AUTH_STORAGE_KEY } }) : null;
 let authUser = null;
 let authBusy = false;
+let authInitialized = false;
+function readPersistedAuth(){
+  try{ const raw=localStorage.getItem(AUTH_STORAGE_KEY); if(!raw)return null; const parsed=JSON.parse(raw); if(parsed?.access_token && parsed?.user)return parsed; }catch(e){} return null;
+}
+
 function accountLabel(){return authUser?.email || 'Account'}
 function updateAccountButton(){const b=document.getElementById('accountBtn');if(b)b.textContent=authUser?.email?'⚙️ '+authUser.email:'⚙️ Account'}
+window.addEventListener('unhandledrejection',e=>console.warn('Project 2.0 unhandled rejection',e.reason));
 async function syncToCloud(){
   if(!supabaseClient || !authUser || authBusy) return;
   try{await supabaseClient.from('user_data').upsert({user_id:authUser.id,data,updated_at:new Date().toISOString()},{onConflict:'user_id'});}catch(e){console.warn('Project 2.0 cloud sync failed',e)}
@@ -184,15 +194,54 @@ function welcomeSignIn(){hideWelcome();if(hasSupabase)openAuthForm('login');else
 function skipWelcome(){localStorage.setItem('project20_welcome_skipped','1');hideWelcome()}
 
 async function initAuth(){
- updateAccountButton();
- if(!supabaseClient){if(localStorage.getItem('project20_welcome_skipped')!=='1')showWelcome();return;}
- try{
-   const {data:{session}}=await supabaseClient.auth.getSession();
-   authUser=session?.user||null;updateAccountButton();
-   if(authUser){localStorage.setItem('project20_account_created','1');await loadFromCloudOrUploadLocal();}
-   if(localStorage.getItem('project20_welcome_skipped')!=='1')showWelcome();
-   supabaseClient.auth.onAuthStateChange((_event,session)=>{setTimeout(async()=>{authUser=session?.user||null;updateAccountButton();if(authUser){localStorage.setItem('project20_account_created','1');await loadFromCloudOrUploadLocal();await fetchGlobalLibraries();hideWelcome();}render()},0)});
- }catch(e){console.warn('Project 2.0 auth init failed',e)}
+  updateAccountButton();
+  if(!supabaseClient){ if(localStorage.getItem('project20_welcome_skipped')!=='1')showWelcome(); authInitialized=true; return; }
+  try{
+    // Restore the persisted session immediately so a refresh never appears logged out while Supabase rehydrates.
+    const persisted=readPersistedAuth();
+    if(persisted?.user){ authUser=persisted.user; localStorage.setItem('project20_account_created','1'); updateAccountButton(); }
+    // Let Supabase validate/refresh the persisted session. If its storage is temporarily unavailable, retain the persisted user.
+    let session=null;
+    try{ const res=await supabaseClient.auth.getSession(); session=res?.data?.session||null; }catch(e){ console.warn('Project 2.0 session restore warning',e); }
+    if(session?.user){
+      authUser=session.user;
+      localStorage.setItem('project20_account_created','1');
+      updateAccountButton();
+      await loadFromCloudOrUploadLocal();
+      await fetchGlobalLibraries();
+      hideWelcome();
+    }else if(!persisted?.user){
+      authUser=null; updateAccountButton();
+      if(localStorage.getItem('project20_welcome_skipped')!=='1')showWelcome();
+    }else{
+      // Persisted auth exists but Supabase did not return it yet; keep the session visible and let the auth listener resolve it.
+      updateAccountButton();
+      if(localStorage.getItem('project20_welcome_skipped')!=='1')showWelcome();
+    }
+    supabaseClient.auth.onAuthStateChange((event,session)=>{
+      setTimeout(async()=>{
+        // Never turn a real persisted session into a logged-out UI because of a transient INITIAL_SESSION/refresh event.
+        if(session?.user){
+          authUser=session.user;
+          localStorage.setItem('project20_account_created','1');
+          updateAccountButton();
+          await loadFromCloudOrUploadLocal();
+          await fetchGlobalLibraries();
+          hideWelcome();
+        }else if(event==='SIGNED_OUT'){
+          authUser=null;
+          updateAccountButton();
+          localStorage.removeItem(AUTH_STORAGE_KEY);
+          render();
+        }
+      },0);
+    });
+  }catch(e){
+    console.warn('Project 2.0 auth init failed',e);
+    // Preserve a valid locally persisted session instead of forcing a logout UI.
+    const persisted=readPersistedAuth();
+    if(persisted?.user){ authUser=persisted.user; localStorage.setItem('project20_account_created','1'); updateAccountButton(); hideWelcome(); }
+  }finally{ authInitialized=true; }
 }
 
 const defaultExercises=[
@@ -797,7 +846,7 @@ function render(){
   homeM.innerHTML=datedMeasurements.map(({n,m})=>`<button class="item split" onclick="openMeasurementHistory('${encodeURIComponent(n)}')" style="text-align:left"><div><strong>${esc(n)}</strong><div class="sub">Logged ${formatSelectedDate(selectedDay())}</div></div><strong>${m.value} ${esc(m.unit||'')}</strong></button>`).join('')||`<div class="empty">No measurements logged for ${esc(formatSelectedDate(selectedDay()))}.</div>`;
   let mh=document.getElementById('measurementHistory');mh.innerHTML=mnames.map(n=>{let m=measurementLatest(n),arr=data.measurements[n];return `<button class="item split" onclick="openMeasurementHistory('${encodeURIComponent(n)}')" style="text-align:left"><div><strong>${esc(n)}</strong><div class="sub">${arr.length} log${arr.length===1?'':'s'} · latest ${m.date}</div></div><strong>${m.value} ${esc(m.unit||'')}</strong></button>`}).join('')||'<div class="empty">No measurements yet.</div>';
 
-  let ws=data.weights.filter(x=>x&&x.date&&Number.isFinite(Number(x.value))&&Number(x.value)>0).slice(-14);let vals=ws.map(x=>Number(x.value));let min=vals.length?Math.min(...vals):0,max=vals.length?Math.max(...vals):1,range=max-min||1;const chart=document.getElementById('weightChart');chart.innerHTML=ws.length?ws.map(x=>{let value=Number(x.value);let ht=range===1?58:18+((value-min)/range)*105;let shortDate=new Date(x.date+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short'});return `<div class="weight-bar-wrap" title="${esc(x.date)}: ${value.toFixed(1)} kg"><div class="weight-value">${value.toFixed(1)}</div><div class="weight-bar" style="height:${ht}px"></div><div class="weight-date">${shortDate}</div></div>`}).join(''):'<div class="weight-chart-empty">No weight history yet.</div>';document.getElementById('weightHistoryList').innerHTML=ws.slice().reverse().map(x=>`<div class="weight-history-row"><span>${esc(x.date)}</span><strong>${Number(x.value).toFixed(1)} kg</strong></div>`).join('');let recent=ws.slice(-7);document.getElementById('avgWeight').textContent=recent.length?(recent.reduce((a,x)=>a+Number(x.value),0)/recent.length).toFixed(1)+' kg':'—';document.getElementById('sessionCount').textContent=data.sessions.length;
+  let ws=data.weights.filter(x=>x&&x.date&&Number.isFinite(Number(x.value))&&Number(x.value)>0).slice(-14);let vals=ws.map(x=>Number(x.value));let min=vals.length?Math.min(...vals):0,max=vals.length?Math.max(...vals):1,range=max-min||1;const chart=document.getElementById('weightChart');chart.innerHTML=ws.length?ws.map(x=>{let value=Number(x.value);let ht=range===1?58:18+((value-min)/range)*105;let shortDate=new Date(x.date+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short'});return `<div class="weight-bar-wrap" title="${esc(x.date)}: ${value.toFixed(1)} kg"><div class="weight-value">${value.toFixed(1)}</div><div class="weight-bar" style="height:${ht}px"></div><div class="weight-date">${shortDate}</div></div>`}).join(''):'<div class="weight-chart-empty">No weight history yet.</div>';document.getElementById('weightHistoryList').innerHTML=ws.slice().reverse().map(x=>`<div class="weight-history-row"><span>${esc(x.date)}</span><strong>${Number(x.value).toFixed(1)} kg</strong></div>`).join('');let recent=ws.slice(-7);document.getElementById('avgWeight').textContent=recent.length?(recent.reduce((a,x)=>a+Number(x.value),0)/recent.length).toFixed(1)+' kg':'—';const sessionCount=document.getElementById('sessionCount');if(sessionCount)sessionCount.textContent=data.sessions.length;
   const a7=dayAverageWeights(7),a14=dayAverageWeights(14),a30=dayAverageWeights(30);document.getElementById('avgWeight14').textContent=a14!=null?a14.toFixed(1)+' kg':'—';document.getElementById('avgWeight30').textContent=a30!=null?a30.toFixed(1)+' kg':'—';document.getElementById('avgWeight').textContent=a7!=null?a7.toFixed(1)+' kg':'—';const prevDate=(()=>{const d=new Date(selectedDay()+'T00:00:00');d.setDate(d.getDate()-7);return d.toISOString().slice(0,10)})();const prevW=data.weights.filter(x=>x.date<=prevDate).at(-1)?.value;document.getElementById('weeklyWeightChange').textContent=(a7!=null&&prevW!=null)?((a7-Number(prevW)).toFixed(1)+' kg'):'—';const n7=lastSevenDates().map(d=>dailyNutrition(d));document.getElementById('avgCal7').textContent=Math.round(n7.reduce((a,x)=>a+x.cal,0)/7)+' kcal';document.getElementById('avgProt7').textContent=Math.round(n7.reduce((a,x)=>a+x.prot,0)/7)+' g';
   const prs=exercisePRs();document.getElementById('prs').innerHTML=Object.entries(prs).sort((a,b)=>b[1].est-a[1].est).slice(0,10).map(([n,v])=>`<div class="item"><div class="split"><strong>${esc(n)}</strong><span class="pr-badge">🏆 PR</span></div><div class="sub">Best ${v.weight.toFixed(1)} kg · ${v.reps} reps · est. 1RM ${v.est.toFixed(1)} kg</div></div>`).join('')||'<div class="empty">Complete workouts to build PRs.</div>';renderPhotoGallery();
 

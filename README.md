@@ -1,9 +1,5 @@
-# Project 2.0 V48
+Project 2.0 V52 Repaired
 
-Nutrition now supports multi-select food logging: select multiple foods, enter quantities in one screen, and save them to the selected meal in one action. The food picker remains searchable and scrollable.
+Fixes the concrete render crash caused by a reference to the missing #sessionCount element. This crash was preventing cloud data restoration and making the app appear unresponsive after login/refresh.
 
-
-V49: fixed workout and food selection overlay closure after save; added robust overlay cleanup and explicit navigation.
-
-
-V52: robustly closes workout logging after save and adds a Clear meal action for logged foods.
+Keep config.js with your real Supabase URL and public/publishable key.
