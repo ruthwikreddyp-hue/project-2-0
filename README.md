@@ -1,2 +1,3 @@
-# Project 2.0 V26
-Exercise library replaced with the supplied exercise/demo database. Demo links can be edited from Exercise Library > Edit.
+# Project 2.0 V27
+
+Fixed workout creation/edit flow: selecting exercises no longer resets the selected exercise list or workout name when returning from the exercise picker. Save now works for both new and edited workouts.
