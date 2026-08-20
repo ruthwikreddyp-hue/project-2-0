@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta charset="utf-8"><meta name="project-version" content="V42"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="config.js"></script>
 <meta name="theme-color" content="#0b0b0c"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Project 2.0"><link rel="manifest" href="manifest.json"><title>Project 2.0</title>
@@ -11,7 +11,7 @@
 .auth-status{display:flex;gap:8px;align-items:center;margin:10px 0 16px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#101013}.auth-dot{width:8px;height:8px;border-radius:50%;background:#777}.auth-dot.on{background:#7ee2a8}.auth-note{font-size:12px;color:var(--muted)} .auth-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}.auth-tabs button.active{background:#fff;color:#111}.auth-error{color:#ff9a9a;font-size:12px;margin-top:8px;min-height:18px}.welcome-overlay{position:fixed;inset:0;background:var(--bg);z-index:100;display:flex;align-items:center;justify-content:center;padding:24px}.welcome-overlay.hidden{display:none}.welcome-card{width:min(520px,100%);text-align:center;padding:18px}.welcome-logo{font-size:13px;letter-spacing:4px;font-weight:800;color:var(--muted);margin-bottom:8px}.welcome-title{font-size:40px;line-height:1.05;letter-spacing:-1.8px;margin:0}.welcome-copy{color:var(--muted);margin:12px auto 26px;max-width:340px;line-height:1.5}.welcome-actions{display:flex;flex-direction:column;gap:10px}.welcome-secondary{background:var(--card2);border:1px solid var(--line);padding:14px;border-radius:13px;font-weight:650}.welcome-user{font-size:13px;color:var(--muted);margin:-8px 0 18px;word-break:break-word} @media (max-width:480px){.welcome-title{font-size:34px}}
 @media(min-width:700px){.app{padding-bottom:30px}.nav{position:sticky;top:0;bottom:auto;border-top:0;border-bottom:1px solid var(--line)}.navinner{padding:8px 20px}.nav button{font-size:11px}.icon{display:inline;margin-right:5px;font-size:16px}}
 
-.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.photo-card{background:#101013;border:1px solid var(--line);border-radius:12px;overflow:hidden}.photo-card img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}.photo-meta{padding:8px;font-size:11px}.photo-actions{display:flex;gap:6px;padding:0 8px 8px}.mini{font-size:11px;padding:7px 9px;border-radius:9px;background:var(--card2);border:1px solid var(--line)}.trend-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.trend-box{background:#101013;border:1px solid var(--line);border-radius:11px;padding:10px}.trend-box .v{font-size:18px;font-weight:700;margin-top:4px}.pr-badge{font-size:10px;color:#7ee2a8}.suggested{font-size:11px;color:var(--good);margin-top:6px}.save-meal{font-size:11px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:#101013}.recipe-item{display:flex;justify-content:space-between;align-items:center;background:#101013;border:1px solid var(--line);padding:10px 12px;border-radius:10px}.schedule-box{margin-top:10px;padding:10px;background:#101013;border:1px solid var(--line);border-radius:10px}.pill{font-size:10px;padding:4px 7px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.photo-card{background:#101013;border:1px solid var(--line);border-radius:12px;overflow:hidden}.photo-card img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}.photo-meta{padding:8px;font-size:11px}.photo-actions{display:flex;gap:6px;padding:0 8px 8px}.mini{font-size:11px;padding:7px 9px;border-radius:9px;background:var(--card2);border:1px solid var(--line)}.trend-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.trend-box{background:#101013;border:1px solid var(--line);border-radius:11px;padding:10px}.trend-box .v{font-size:18px;font-weight:700;margin-top:4px}.pr-badge{font-size:10px;color:#7ee2a8}.suggested{font-size:11px;color:var(--good);margin-top:6px}.save-meal{font-size:11px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:#101013}.recipe-item{display:flex;justify-content:space-between;align-items:center;background:#101013;border:1px solid var(--line);padding:10px 12px;border-radius:10px}pill{font-size:10px;padding:4px 7px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
 
 .admin-grid{display:grid;grid-template-columns:1fr;gap:10px}.admin-item{background:#101013;border:1px solid var(--line);border-radius:12px;padding:12px}.admin-item .title{font-weight:700;font-size:14px}.admin-item .meta{font-size:11px;color:var(--muted);margin-top:4px}.admin-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}.danger{color:#ff8b8b}.admin-tabs{display:flex;gap:8px;margin:12px 0}.admin-tabs button.active{background:#fff;color:#111}.admin-search{margin-bottom:10px}.admin-note{background:#101013;border:1px solid var(--line);padding:11px;border-radius:11px;font-size:12px;color:var(--muted)}
 </style></head>
@@ -34,6 +34,7 @@
 <div class="list" id="homeMeasurements"></div>
 </section>
 <section id="workout" class="screen"><div class="daybar"><button onclick="changeDate(-1)" aria-label="Previous day">‹</button><input id="workoutDate" type="date" onchange="setDateFromInput(this.value)"><button onclick="changeDate(1)" aria-label="Next day">›</button></div><div class="hero"><h1>Workout</h1><p>Track only weight and reps.</p></div><div class="section"><h2>My workouts</h2><div class="row"><button class="link" onclick="openExerciseLibrary()">Exercises</button><button class="link" onclick="openNewWorkout()">＋ New workout</button></div></div><div class="grid" id="templates"></div><div class="section"><h2>Recent sessions</h2></div><div class="list" id="sessions"></div></section>
+<section id="workoutLog" class="screen"><div class="daybar"><button onclick="show('workout')" aria-label="Back to workouts">‹</button><div style="flex:1;text-align:center;font-size:13px;color:var(--muted)">Workout log</div><div style="width:42px"></div></div><div id="workoutLogContent"></div></section>
 <section id="nutrition" class="screen"><div class="daybar"><button onclick="changeDate(-1)" aria-label="Previous day">‹</button><input id="nutritionDate" type="date" onchange="setDateFromInput(this.value)"><button onclick="changeDate(1)" aria-label="Next day">›</button></div><div class="hero"><h1>Nutrition</h1><p>Keep the daily numbers simple.</p></div><div class="card"><div class="label">Daily totals</div><div class="macro-grid"><div class="macro-box"><div class="metric-emoji">🔥</div><div class="macro-value"><span id="nutCal">0</span></div><div class="macro-label">Calories</div></div><div class="macro-box"><div class="metric-emoji">💪</div><div class="macro-value"><span id="nutProt">0</span>g</div><div class="macro-label">Protein</div></div><div class="macro-box"><div class="metric-emoji">🍞</div><div class="macro-value"><span id="nutCarb">0</span>g</div><div class="macro-label">Carbs</div></div><div class="macro-box"><div class="metric-emoji">🥑</div><div class="macro-value"><span id="nutFat">0</span>g</div><div class="macro-label">Fat</div></div></div><div class="calorie-progress-wrap"><div class="calorie-progress-head"><span>🔥 Calories</span><strong><span id="nutCalUsed">0</span> / <span id="nutCalGoal">0</span> kcal</strong></div><div class="calorie-progress"><div class="bar" id="nutBar" style="width:0%"></div></div><div class="calorie-status" id="nutCalRemaining">0 kcal remaining</div></div></div><div class="section"><h2 id="mealHeading">Meals</h2><div class="row"><button class="link" onclick="openSavedMeals()">Saved meals</button><button class="link" onclick="openRecipeLibrary()">Recipes</button><button class="link" onclick="openFoodLibrary()">Foods</button></div></div><div id="mealGroups"></div></section>
 <section id="goals" class="screen"><div class="hero"><h1>Goals</h1><p>Set the four targets Project 2.0 tracks.</p></div><div class="list"><div class="card"><div class="label">⚖️ Weight</div><div class="sub" style="margin-bottom:10px">Target body weight</div><div class="field"><input id="goalWeightTab" type="number" step="0.1" min="1" value="70"></div><div class="sub">kg</div></div><div class="card"><div class="label">🔥 Calories</div><div class="sub" style="margin-bottom:10px">Daily calorie target</div><div class="field"><input id="goalCalTab" type="number" min="1" value="1800"></div><div class="sub">kcal / day</div></div><div class="card"><div class="label">👣 Steps</div><div class="sub" style="margin-bottom:10px">Daily step target</div><div class="field"><input id="goalStepsTab" type="number" min="1" value="10000"></div><div class="sub">steps / day</div></div><div class="card"><div class="label">💧 Water</div><div class="sub" style="margin-bottom:10px">Daily water target</div><div class="field"><input id="goalWaterTab" type="number" min="1" step="50" value="2500"></div><div class="sub">ml / day</div></div></div><div class="row" style="margin-top:14px"><button class="primary" style="margin-top:0" onclick="saveGoalsFromTab()">Save goals</button><button class="secondary" onclick="resetGoals()">Reset goals</button></div></section>
 <section id="progress" class="screen"><div class="hero"><h1>Progress</h1><p>Your data, not just the scale.</p></div><div class="trend-grid"><div class="trend-box"><div class="label">7-day avg</div><div class="v" id="avgWeight">—</div></div><div class="trend-box"><div class="label">14-day avg</div><div class="v" id="avgWeight14">—</div></div><div class="trend-box"><div class="label">30-day avg</div><div class="v" id="avgWeight30">—</div></div></div><div class="trend-grid" style="margin-top:8px"><div class="trend-box"><div class="label">Weekly change</div><div class="v" id="weeklyWeightChange">—</div></div><div class="trend-box"><div class="label">Avg calories 7d</div><div class="v" id="avgCal7">—</div></div><div class="trend-box"><div class="label">Avg protein 7d</div><div class="v" id="avgProt7">—</div></div></div><div class="section"><h2><span class="metric-emoji">⚖️</span> Weight progress</h2><button class="link" onclick="openWeight()">＋ Log</button></div><div class="card"><div id="weightChart" class="weight-chart"></div><div id="weightHistoryList" class="weight-history-list"></div></div><div class="section"><h2><span class="metric-emoji">📏</span> Measurements</h2><button class="link" onclick="openMeasurementLog()">＋ Add</button></div><div class="list" id="measurementHistory"></div><div class="section"><h2>🏆 Personal records</h2></div><div class="list" id="prs"></div><div class="section"><h2>Strength</h2></div><div class="list" id="strength"></div><div class="section"><h2>📸 Progress photos</h2><button class="link" onclick="openPhotoAdd()">＋ Add</button></div><div id="photoGallery" class="photo-grid"></div></section>
@@ -567,7 +568,7 @@ if(localStorage.getItem('project20_exercise_library_version')!==PROJECT26_EXERCI
   localStorage.setItem('project20_exercise_library_version',PROJECT26_EXERCISES_VERSION);
   save();
 }
-data.goals=data.goals||defaults.goals;data.savedMeals=Array.isArray(data.savedMeals)?data.savedMeals:[];data.recipes=Array.isArray(data.recipes)?data.recipes:[];data.schedule=data.schedule&&typeof data.schedule==='object'?data.schedule:{};data.photos=Array.isArray(data.photos)?data.photos:[];data.weights=Array.isArray(data.weights)?data.weights.map(x=>({date:String(x?.date||''),value:Number(x?.value)})).filter(x=>x.date&&Number.isFinite(x.value)&&x.value>0):[];data.meals=Array.isArray(data.meals)?data.meals.map(x=>({...x,meal:x.meal||'Unassigned'})):[];data.sessions=data.sessions||[];data.templates=data.templates||[];data.exercises=Array.from(new Set([...(data.exercises||[]),...defaultExercises]));data.measurements=data.measurements||{};data.foods=Array.isArray(data.foods)?data.foods:[];data.foodDeleted=Array.isArray(data.foodDeleted)?data.foodDeleted:[];data.foodOverrides=data.foodOverrides&&typeof data.foodOverrides==='object'?data.foodOverrides:{};
+data.goals=data.goals||defaults.goals;data.savedMeals=Array.isArray(data.savedMeals)?data.savedMeals:[];data.recipes=Array.isArray(data.recipes)?data.recipes:[];data.photos=Array.isArray(data.photos)?data.photos:[];data.weights=Array.isArray(data.weights)?data.weights.map(x=>({date:String(x?.date||''),value:Number(x?.value)})).filter(x=>x.date&&Number.isFinite(x.value)&&x.value>0):[];data.meals=Array.isArray(data.meals)?data.meals.map(x=>({...x,meal:x.meal||'Unassigned'})):[];data.sessions=data.sessions||[];data.templates=data.templates||[];data.exercises=Array.from(new Set([...(data.exercises||[]),...defaultExercises]));data.measurements=data.measurements||{};data.foods=Array.isArray(data.foods)?data.foods:[];data.foodDeleted=Array.isArray(data.foodDeleted)?data.foodDeleted:[];data.foodOverrides=data.foodOverrides&&typeof data.foodOverrides==='object'?data.foodOverrides:{};
 const existingFoodNames=new Set(data.foods.map(f=>String(f?.name||'').toLowerCase()));
 const deletedFoodNames=new Set(data.foodDeleted.map(n=>String(n).toLowerCase()));
 const mergedFoods=[];
@@ -585,7 +586,7 @@ function dayPickerSync(){['homeDate','workoutDate','nutritionDate'].forEach(id=>
 function save(){localStorage.setItem(KEY,JSON.stringify(data));render();syncToCloud()}
 function fmt(n){return Number(n||0).toLocaleString('en-IN')}
 function toast(t){let x=document.getElementById('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),1500)}
-function show(id){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.screen===id));window.scrollTo({top:0,left:0,behavior:'instant'});document.documentElement.scrollTop=0;document.body.scrollTop=0;render()}
+function show(id,doRender=true){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));const target=document.getElementById(id);if(!target)return;target.classList.add('active');const navId=id==='workoutLog'?'workout':id;document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.screen===navId));window.scrollTo({top:0,left:0,behavior:'instant'});document.documentElement.scrollTop=0;document.body.scrollTop=0;if(doRender)render()}
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>show(b.dataset.screen));
 let demoReturnHtml=null;
 let demoReturnWasModal=false;
@@ -654,52 +655,61 @@ function renderExerciseLibrary(){let q=(document.getElementById('librarySearch')
 function createWorkout(){let name=document.getElementById('tname').value.trim();window.newWorkoutName=name;let ex=window.newWorkoutSelected||[];if(!name)return toast('Add a workout name');if(!ex.length)return toast('Add at least one exercise');if(data.templates.some(t=>t.name.toLowerCase()===name.toLowerCase()))return toast('Workout name already exists');data.templates.push({name,ex:[...ex]});save();window.newWorkoutSelected=[];window.newWorkoutName='';window.editingWorkoutIndex=null;closeModal();show('workout');toast('Workout created ✓')}
 function saveEditedWorkout(){let i=window.editingWorkoutIndex,name=document.getElementById('tname').value.trim(),ex=window.newWorkoutSelected||[];if(i==null||!data.templates[i])return toast('Workout not found');if(!name)return toast('Add a workout name');if(!ex.length)return toast('Add at least one exercise');let duplicate=data.templates.some((t,idx)=>idx!==i&&t.name.toLowerCase()===name.toLowerCase());if(duplicate)return toast('Workout name already exists');data.templates[i]={...data.templates[i],name,ex:[...ex]};save();window.newWorkoutSelected=[];window.newWorkoutName='';window.editingWorkoutIndex=null;closeModal();show('workout');toast('Workout updated ✓')}
 function deleteWorkout(i){let w=data.templates[i];if(!w)return;if(!confirm(`Delete \"${w.name}\"?`))return;data.templates.splice(i,1);save();render();toast('Workout deleted')}
-function startWorkout(i){const template=data.templates[i];if(!template)return toast('Workout not found');activeWorkout={template:{...template},date:selectedDay(),started:Date.now(),exercises:template.ex.map(name=>({name,sets:[]}))};closeModal();show('workout');openActiveWorkout()}
-function openActiveWorkout(){
-  if(!activeWorkout)return;
-  openModal(`<button class="close" onclick="closeModal()">×</button>
-    <h2>${esc(activeWorkout.template.name)}</h2>
-    <p class="muted">Log each set with weight and reps.</p>
-    ${activeWorkout.exercises.map((e,ei)=>{
-      let demo=exerciseDemoUrl(e.name);
-      return `<div class="item" style="margin:10px 0">
-        <div class="split" style="align-items:flex-start">
-          <div><strong>${esc(e.name)}</strong>${demo?`<div style="margin-top:6px"><button class="demo-link" onclick="openExerciseDemo('${encodeURIComponent(e.name)}')">▶ How to perform</button></div>`:''}<div class="suggested">${esc(suggestedFor(e.name))}</div></div>
-        </div>
-        <div class="form" style="margin-top:10px;padding:10px;background:#101013">
-          <div class="row">
-            <div class="field" style="flex:1;margin:0"><label>Weight (kg)</label><input id="setWeight_${ei}" type="number" min="0" step="0.5" inputmode="decimal" placeholder="0"></div>
-            <div class="field" style="flex:1;margin:0"><label>Reps</label><input id="setReps_${ei}" type="number" min="1" step="1" inputmode="numeric" placeholder="0"></div>
-            <button class="secondary" style="align-self:flex-end;white-space:nowrap" onclick="saveSet(${ei})">＋ Set</button>
-          </div>
-        </div>
-        <table class="table"><tr><th>Set</th><th>Weight</th><th>Reps</th><th></th></tr>
-          ${e.sets.map((ss,si)=>`<tr><td>${si+1}</td><td>${ss.w} kg</td><td>${ss.r}</td><td><button class="link" onclick="removeWorkoutSet(${ei},${si})">Delete</button></td></tr>`).join('')||'<tr><td colspan="4" class="muted">No sets yet</td></tr>'}
-        </table>
-      </div>`;
-    }).join('')}
-    <button class="primary" onclick="finishWorkout()">Save workout</button>`)
+function startWorkout(i){
+  const template=data.templates[i];
+  if(!template)return toast('Workout not found');
+  activeWorkout={template:{name:template.name,ex:[...template.ex]},date:selectedDay(),started:Date.now(),exercises:template.ex.map(name=>({name,sets:[]}))};
+  closeModal();
+  show('workoutLog', false);
+  renderActiveWorkout();
 }
-function addSet(ei){const w=document.getElementById(`setWeight_${ei}`);if(w)w.focus();}
+function renderActiveWorkout(){
+  const host=document.getElementById('workoutLogContent');
+  if(!host)return;
+  if(!activeWorkout){host.innerHTML='<div class="empty">No workout in progress.</div>';return;}
+  host.innerHTML=`<div class="hero"><h1>${esc(activeWorkout.template.name)}</h1><p>Log each set with weight and reps.</p></div>
+  ${activeWorkout.exercises.map((e,ei)=>{
+    const demo=exerciseDemoUrl(e.name);
+    return `<div class="item" style="margin:10px 0">
+      <div class="split" style="align-items:flex-start">
+        <div><strong style="font-size:17px">${esc(e.name)}</strong>${demo?`<div style="margin-top:7px"><button class="demo-link" onclick="openExerciseDemo('${encodeURIComponent(e.name)}')">▶ How to perform</button></div>`:''}<div class="suggested">${esc(suggestedFor(e.name))}</div></div>
+      </div>
+      <div class="form" style="margin-top:10px;padding:10px;background:#101013">
+        <div class="row">
+          <div class="field" style="flex:1;margin:0"><label>Weight (kg)</label><input id="setWeight_${ei}" type="number" min="0" step="0.5" inputmode="decimal" placeholder="0"></div>
+          <div class="field" style="flex:1;margin:0"><label>Reps</label><input id="setReps_${ei}" type="number" min="1" step="1" inputmode="numeric" placeholder="0"></div>
+          <button class="secondary" style="align-self:flex-end;white-space:nowrap" onclick="saveSet(${ei})">＋ Set</button>
+        </div>
+      </div>
+      <table class="table"><tr><th>Set</th><th>Weight</th><th>Reps</th><th></th></tr>
+        ${e.sets.map((ss,si)=>`<tr><td>${si+1}</td><td>${ss.w} kg</td><td>${ss.r}</td><td><button class="link" onclick="removeWorkoutSet(${ei},${si})">Delete</button></td></tr>`).join('')||'<tr><td colspan="4" class="muted">No sets yet</td></tr>'}
+      </table>
+    </div>`;
+  }).join('')}
+  <button class="primary" onclick="finishWorkout()">Save workout</button>
+  <button class="secondary" style="width:100%;margin-top:10px" onclick="cancelActiveWorkout()">Cancel</button>`;
+}
 function saveSet(ei){
   const w=Number(document.getElementById(`setWeight_${ei}`)?.value),r=Number(document.getElementById(`setReps_${ei}`)?.value);
   if(!activeWorkout?.exercises?.[ei])return toast('Exercise unavailable');
   if(!Number.isFinite(w)||w<0||!Number.isFinite(r)||r<1)return toast('Enter weight and reps');
   activeWorkout.exercises[ei].sets.push({w,r});
-  openActiveWorkout();
+  renderActiveWorkout();
 }
-function removeWorkoutSet(ei,si){if(!activeWorkout?.exercises?.[ei]?.sets?.[si])return;activeWorkout.exercises[ei].sets.splice(si,1);openActiveWorkout()}
-function finishWorkout(){
-  if(!activeWorkout)return;
+function removeWorkoutSet(ei,si){if(!activeWorkout?.exercises?.[ei]?.sets?.[si])return;activeWorkout.exercises[ei].sets.splice(si,1);renderActiveWorkout()}
+function cancelActiveWorkout(){if(!activeWorkout)return; if(!confirm('Discard this workout log?'))return;activeWorkout=null;show('workout')}
+async function finishWorkout(){
+  if(!activeWorkout)return toast('No workout in progress');
   const hasSets=activeWorkout.exercises?.some(e=>Array.isArray(e.sets)&&e.sets.length);
   if(!hasSets)return toast('Log at least one set');
-  const sessionDate=activeWorkout.date||selectedDay();
-  data.sessions.push({date:sessionDate,name:activeWorkout.template.name,duration:Math.round((Date.now()-activeWorkout.started)/60000),exercises:activeWorkout.exercises.map(e=>({name:e.name,sets:e.sets.map(x=>({w:Number(x.w),r:Number(x.r)}))}))});
+  const completed={date:activeWorkout.date||selectedDay(),name:activeWorkout.template.name,duration:Math.max(0,Math.round((Date.now()-activeWorkout.started)/60000)),exercises:activeWorkout.exercises.map(e=>({name:e.name,sets:e.sets.map(x=>({w:Number(x.w),r:Number(x.r)}))}))};
+  data.sessions.push(completed);
   activeWorkout=null;
-  closeModal();
-  save();
+  localStorage.setItem(KEY,JSON.stringify(data));
+  render();
   show('workout');
   toast('Workout saved ✓');
+  try{await syncToCloud();}catch(err){console.error('Cloud sync failed after workout save',err)}
 }
 function openMeasurementLog(){let names=Object.keys(data.measurements);openModal(`<button class="close" onclick="closeModal()">×</button><h2>Add measurement</h2><p class="muted">Create your own measurement. Nothing is predefined.</p><div class="form"><div class="field"><label>Measurement name</label><input id="measName" list="measurementNames" placeholder="e.g. Waist"></div><datalist id="measurementNames">${names.map(esc).map(n=>`<option value="${n}">`).join('')}</datalist><div class="field"><label>Value</label><input id="measValue" type="number" step="0.1" placeholder="82.5"></div><div class="field"><label>Unit</label><select id="measUnit" class="select">${measurementUnitOptions('cm')}</select></div><button class="primary" onclick="addMeasurement()">Save measurement</button></div>`)}
 function openMeasurementEntry(encoded){let name=decodeURIComponent(encoded),arr=data.measurements[name]||[],latest=arr.at(-1)||{};openModal(`<button class="close" onclick="closeModal()">×</button><h2>${esc(name)}</h2><p class="muted">Add a new value without entering the measurement name again.</p><div class="form"><div class="field"><label>Measurement</label><input value="${esc(name)}" disabled></div><div class="field"><label>New value</label><input id="measValue" type="number" step="0.1" placeholder="${latest.value!=null?latest.value:'82.5'}" autofocus></div><div class="field"><label>Unit</label><select id="measUnit" class="select">${measurementUnitOptions(latest.unit||'cm')}</select></div><button class="primary" onclick="addMeasurementValue('${encodeURIComponent(name)}')">＋ Add data</button></div>`)}
@@ -713,8 +723,6 @@ function dailyNutrition(date){const ms=data.meals.filter(x=>x.date===date);retur
 function lastSevenDates(){const out=[];const d=new Date(selectedDay()+'T00:00:00');for(let i=6;i>=0;i--){const x=new Date(d);x.setDate(d.getDate()-i);out.push(x.toISOString().slice(0,10))}return out}
 function exercisePRs(){const out={};data.sessions.forEach(s=>s.exercises?.forEach(e=>e.sets?.forEach(st=>{const w=Number(st.w||0),r=Number(st.r||0);if(!w||!r)return;const est=w*(1+r/30);out[e.name]=out[e.name]||{weight:0,reps:0,est:0,date:s.date};if(w>out[e.name].weight){out[e.name].weight=w;out[e.name].date=s.date}if(r>out[e.name].reps)out[e.name].reps=r;if(est>out[e.name].est)out[e.name].est=est})));return out}
 function suggestedFor(name){let best=null;data.sessions.slice().reverse().some(s=>s.exercises?.some(e=>{if(e.name!==name)return false;e.sets?.forEach(st=>{const w=Number(st.w||0),r=Number(st.r||0);if(w>0&&r>0&&(!best||w>best.w))best={w,r}});return !!best}));if(!best)return '';const next=best.w+2.5;return `Next target: ${Number.isInteger(next)?next:next.toFixed(1)} kg × ${Math.max(1,best.r-2)}–${best.r} reps`}
-function scheduleWorkout(i){const w=data.templates[i];if(!w)return;openModal(`<button class="close" onclick="closeModal()">×</button><h2>Schedule ${esc(w.name)}</h2><div class="form"><div class="field"><label>Date</label><input id="scheduleDate" type="date" value="${selectedDay()}"></div><button class="primary" onclick="saveSchedule(${i})">Schedule workout</button></div>`)}
-function saveSchedule(i){const date=document.getElementById('scheduleDate')?.value;if(!date)return;data.schedule[date]=data.templates[i].name;save();closeModal();toast('Workout scheduled ✓')}
 function openSavedMeals(){openModal(`<button class="close" onclick="closeModal()">×</button><h2>Saved meals</h2><div class="list">${data.savedMeals.map((m,i)=>`<div class="item"><div class="split"><div><strong>${esc(m.name)}</strong><div class="sub">${fmt(m.cal)} kcal · P ${fmt(m.prot)} · C ${fmt(m.carb)} · F ${fmt(m.fat)}</div></div><div class="row"><button class="mini" onclick="addSavedMeal(${i})">Add</button><button class="mini" onclick="deleteSavedMeal(${i})">×</button></div></div></div>`).join('')||'<div class="empty">No saved meals yet. Save a meal from a meal card.</div>'}</div>`)}
 function saveMealPreset(encoded){const meal=decodeURIComponent(encoded),items=data.meals.filter(x=>x.date===selectedDay()&&x.meal===meal);if(!items.length)return toast('Add food to this meal first');const name=prompt('Saved meal name',meal);if(!name)return;const tot=mealTotals(items);data.savedMeals.push({name,items:items.map(({_idx,...x})=>x),cal:tot.cal,prot:tot.prot,carb:tot.carb,fat:tot.fat});save();toast('Meal saved ✓')}
 function addSavedMeal(i){const m=data.savedMeals[i];if(!m)return;m.items.forEach(x=>data.meals.push({...x,date:selectedDay()}));save();closeModal();toast(m.name+' added ✓')}
