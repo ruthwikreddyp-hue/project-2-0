@@ -1,3 +1,3 @@
-# Project 2.0 V20
+# Project 2.0 V21
 
-Nutrition database updated with the user's supplied food list and serving sizes. Food entries store a base serving amount (e.g. 100 g, 1 pc, 1 scoop) and nutrition values for that serving. Custom foods use the same serving-based model.
+Nutrition is tracked meal-wise using the supplied food database and serving sizes. Food entries can be removed after logging, each meal displays calories and individual macros, and Home, Workout, and Nutrition tabs share a selectable log date so you can view data for a specific day. Weight, water, measurements, meals, and workout sessions use the selected date.
